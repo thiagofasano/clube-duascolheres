@@ -1,9 +1,10 @@
-# Clube Duas Colheres 🍮
+# Duas Colheres Pudim 🍮
 
-Cartão fidelidade digital: a cada **12 fatias** compradas, o cliente ganha **1 fatia grátis**.
+Site institucional da Duas Colheres (pudins inteiros e kits para festas, com pedidos pelo WhatsApp) e o Clube Duas Colheres, cartão fidelidade das vendas de fatias: a cada **12 fatias** compradas, o cliente ganha **1 fatia grátis**.
 
-- **`/`**: página do cliente. Ele digita o celular e vê os selos, a validade e as fatias grátis.
-- **`/balcao`**: área da loja (com senha). Lista de clientes, cadastro, registro de compras e entrega de fatias grátis.
+- **`/`**: site institucional (história, pudins, kits e contato).
+- **`/fidelidade`**: página do cliente do clube. Ele digita o celular e vê os selos, a validade e as fatias grátis.
+- **`/fidelidade/balcao`**: área da loja (com senha). Lista de clientes, cadastro, registro de compras e entrega de fatias grátis.
 
 ## Regras
 

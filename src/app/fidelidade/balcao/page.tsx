@@ -3,7 +3,7 @@ import { connection } from "next/server";
 import type { Metadata } from "next";
 import { estaLogado } from "@/lib/auth";
 import { Marca } from "@/components/marca";
-import { listarClientes } from "../actions";
+import { listarClientes } from "@/app/actions";
 import { Login } from "./login";
 import { PainelBalcao } from "./painel";
 

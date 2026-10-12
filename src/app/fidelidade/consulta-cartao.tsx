@@ -5,7 +5,7 @@ import { CartaoSelos } from "@/components/cartao-selos";
 import { CampoTelefone } from "@/components/campo-telefone";
 import { HistoricoConquistas } from "@/components/historico-conquistas";
 import { PremioConquistado } from "@/components/premio-conquistado";
-import { consultarCartao, type CartaoPublico } from "./actions";
+import { consultarCartao, type CartaoPublico } from "@/app/actions";
 
 export function ConsultaCartao() {
   const [telefone, setTelefone] = useState("");

@@ -18,7 +18,7 @@ import {
   type CartaoBalcao,
   type ResumoCliente,
   type Resultado,
-} from "../actions";
+} from "@/app/actions";
 
 type Aviso = { tipo: "sucesso" | "erro" | "festa"; texto: string };
 

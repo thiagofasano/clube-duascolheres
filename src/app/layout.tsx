@@ -6,8 +6,9 @@ const fredoka = Fredoka({ variable: "--font-fredoka", subsets: ["latin"] });
 const nunito = Nunito({ variable: "--font-nunito", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Clube Duas Colheres · Feito para adoçar momentos.",
-  description: "A cada 12 fatias de pudim, a próxima é por nossa conta.",
+  title: "Duas Colheres Pudim · Feito para adoçar momentos.",
+  description:
+    "Pudins artesanais feitos com amor no Rio de Janeiro. Pudins inteiros nos tamanhos grande e médio e kits para aniversários e casamentos. Entregamos em toda a capital.",
 };
 
 export const viewport: Viewport = {

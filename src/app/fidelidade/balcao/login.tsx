@@ -2,7 +2,7 @@
 
 import { useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
-import { entrarNoBalcao } from "../actions";
+import { entrarNoBalcao } from "@/app/actions";
 
 export function Login() {
   const router = useRouter();
