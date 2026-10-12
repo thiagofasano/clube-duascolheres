@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <circle cx="32" cy="32" r="32" fill="#e8789a"/>
+  <!-- prato -->
+  <ellipse cx="32" cy="47" rx="22" ry="5" fill="#ffffff"/>
+  <!-- corpo do pudim -->
+  <path d="M17 45 L21 24 Q32 19 43 24 L47 45 Q32 50 17 45 Z" fill="#f2d49b"/>
+  <!-- calda -->
+  <path d="M21 24 Q32 19 43 24 L44 30 Q41 33 39 30 Q37 35 34 31 Q31 36 28 31 Q25 34 23 30 Q21 32 20 29 Z" fill="#8a4b2a"/>
+  <ellipse cx="32" cy="23.5" rx="11" ry="3" fill="#a35a33"/>
+  <!-- brilho -->
+  <path d="M25 22.5 Q28 21 31 21.3" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" fill="none" opacity="0.8"/>
+</svg>

@@ -1,26 +1,66 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-rosa-50: #fdf2f5;
+  --color-rosa-100: #fbe3ea;
+  --color-rosa-200: #f7c6d4;
+  --color-rosa-300: #f09ab3;
+  --color-rosa-400: #e8789a;
+  --color-rosa-500: #d9577f;
+  --color-rosa-600: #bb3f66;
+  --color-rosa-700: #963251;
+  --color-bege-50: #fdfaf5;
+  --color-bege-100: #f8f0e3;
+  --color-bege-200: #efdfc6;
+  --color-bege-300: #e2c9a2;
+  --color-bege-400: #c9a678;
+  --color-cacau: #5b3a2e;
+  --color-cacau-suave: #8a6a5c;
+  --font-sans: var(--font-nunito);
+  --font-titulo: var(--font-fredoka);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-bege-100);
+  color: var(--color-cacau);
+  font-family: var(--font-nunito), system-ui, sans-serif;
+}
+
+/* Fundo com bolinhas suaves, lembrando papel de confeitaria */
+.fundo-confeitaria {
+  background-color: var(--color-bege-100);
+  background-image: radial-gradient(var(--color-bege-200) 1.5px, transparent 1.5px);
+  background-size: 22px 22px;
+}
+
+@keyframes carimbo {
+  0% { transform: scale(1.6) rotate(-20deg); opacity: 0; }
+  60% { transform: scale(0.9) rotate(4deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0); }
+}
+.animar-carimbo {
+  animation: carimbo 0.45s ease-out both;
+}
+
+/* Comemoração da fatia grátis */
+@keyframes confete {
+  0% { transform: translateY(-20px) rotate(0); opacity: 0; }
+  10% { opacity: 1; }
+  100% { transform: translateY(380px) rotate(540deg); opacity: 0; }
+}
+.confete {
+  animation: confete 3s linear infinite;
+}
+
+@keyframes pulo-premio {
+  0%, 100% { transform: translateY(0) rotate(-4deg) scale(1); }
+  50% { transform: translateY(-10px) rotate(4deg) scale(1.06); }
+}
+.pulo-premio {
+  animation: pulo-premio 1.6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .confete { display: none; }
+  .pulo-premio, .animar-carimbo { animation: none; }
 }
