@@ -216,7 +216,7 @@ function Cabecalho() {
           <Image src="/logo.svg" alt="" width={40} height={40} className="rounded-full ring-2 ring-white" />
           <span className="whitespace-nowrap font-titulo text-xl font-semibold text-rosa-600">Duas Colheres</span>
         </Link>
-        <nav aria-label="Seções" className="hidden items-center gap-6 font-titulo text-cacau md:flex">
+        <nav aria-label="Seções" className="ml-auto mr-4 hidden items-center gap-6 font-titulo text-cacau md:flex">
           {links.map((l) => (
             <Link key={l.href} href={l.href} className="transition hover:text-rosa-600">
               {l.texto}
@@ -233,7 +233,6 @@ function Cabecalho() {
           >
             <IconeInstagram />
           </a>
-          <BotaoWhatsapp className="hidden px-4 py-2 text-base sm:inline-flex">Pedir</BotaoWhatsapp>
         </div>
       </div>
     </header>
